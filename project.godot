@@ -10,18 +10,36 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Object",
+"class": "Bar",
+"language": "GDScript",
+"path": "res://property_usage_flags_example/bar.gd"
+}, {
+"base": "Object",
 "class": "Foo",
 "language": "GDScript",
-"path": "res://foo.gd"
+"path": "res://minimum_bug_repro/foo.gd"
 }, {
 "base": "Node2D",
 "class": "Main",
 "language": "GDScript",
 "path": "res://main.gd"
+}, {
+"base": "Reference",
+"class": "MinimumBugRepro",
+"language": "GDScript",
+"path": "res://minimum_bug_repro/minimum_bug_repro.gd"
+}, {
+"base": "Reference",
+"class": "PropertyUsageFlagsExample",
+"language": "GDScript",
+"path": "res://property_usage_flags_example/property_usage_flags_example.gd"
 } ]
 _global_script_class_icons={
+"Bar": "",
 "Foo": "",
-"Main": ""
+"Main": "",
+"MinimumBugRepro": "",
+"PropertyUsageFlagsExample": ""
 }
 
 [application]
